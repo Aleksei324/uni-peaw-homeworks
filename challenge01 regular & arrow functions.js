@@ -21,16 +21,16 @@ https://dev.to/vandnakapoor19/the-difference-between-regular-functions-and-arrow
 */
 
 const regular = function isEven(n) {
-    /*
+  /*
     receive a number;
     will print in console if it's odd or even
     */
-    let x;
-    n%2 === 0 ? x='even': x='odd';
-    console.log(x);
-}
+  let x;
+  n % 2 === 0 ? (x = "even") : (x = "odd");
+  console.log(x);
+};
 
-const arrow = (n) => console.log(n%2 === 0 ? 'even': 'odd');
+const arrow = (n) => console.log(n % 2 === 0 ? "even" : "odd");
 
 regular(1);
 regular(2);

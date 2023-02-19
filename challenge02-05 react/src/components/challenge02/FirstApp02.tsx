@@ -1,4 +1,4 @@
-export const FirstApp = () => {
+export const FirstApp02 = () => {
   /**
    * Return a new title into h1
    * tag and a text “10” into

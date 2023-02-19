@@ -6,7 +6,7 @@ export const FirstApp02 = () => {
    */
   return (
     <div>
-      <h1>Vite + React: Learning React</h1>
+      <h1>Vite + React: Aprendiendo React</h1>
       <span>10</span>
     </div>
   )

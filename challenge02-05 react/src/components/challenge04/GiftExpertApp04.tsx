@@ -21,15 +21,14 @@ export const GiftExpertApp04 = () => {
 
   return (
     <div>
-      <form id="formc">
-        <label htmlFor='cinput'>Categoría: </label>
-        <input 
-          type='text'
-          id='cinput'
-          name='categoryinput'
-          value={getInputValue}
-          onChange={(event) => setInputValue(event.target.value)}/>
-      </form>
+      <label htmlFor='cinput'>Categoría: </label>
+      <input 
+        type='text'
+        id='cinput'
+        name='categoryinput'
+        placeholder='Inserte su categoría'
+        value={getInputValue}
+        onChange={(event) => setInputValue(event.target.value)}/>
 
       <button type="button" onClick={() => addCategory()}>Añadir categoría</button>
 

@@ -11,7 +11,7 @@ export const Challenge08breakingBad = () => {
           <h2>Cargando...</h2>
         ):(
           <div>
-            <b> Frase de Breaking Bad #{getCounter}: </b> { data }
+            <b> Frase de Breaking Bad #{getCounter}: </b> { data[0][0]?.quote }
           </div>
         )
       }

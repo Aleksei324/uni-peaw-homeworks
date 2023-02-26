@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 
 export const useFetch = (url: string) => {
-  const [getData, setData] = useState('')
+  const [getData, setData] = useState<any[]>([])
   const [getLoading, setLoading] = useState(true)
   const [getError, setError] = useState(null)
 
@@ -11,7 +11,7 @@ export const useFetch = (url: string) => {
     const api = await fetch(url)
     const datajson = await api.json()
 
-    setData(datajson[0]?.quote)
+    setData([datajson])
     setLoading(false)
   }
 

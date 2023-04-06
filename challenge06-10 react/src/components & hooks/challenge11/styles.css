@@ -1,0 +1,14 @@
+.todoDone {
+  background-color: rgb(135, 201, 37);
+  text-decoration: line-through;
+}
+
+.todo {
+  margin: 0.5rem;
+  border-radius: 1rem;
+  width: fit-content;
+}
+
+.todo > * {
+  margin: 0.5rem;
+}

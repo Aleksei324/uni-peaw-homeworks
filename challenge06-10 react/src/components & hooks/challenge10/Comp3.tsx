@@ -1,28 +1,16 @@
-import { FormEvent } from "react"
-import { actionParams } from "./"
-import * as types from './'
+import { FormEvent, useState } from "react"
 
 interface comp3Props {
-	dispatch: React.Dispatch<actionParams>
+	createTodo: (text: string) => void
 }
 
-export const Comp3 = ({dispatch}: comp3Props) => {
+export const Comp3 = ({createTodo}: comp3Props) => {
+	const [input, setInput] = useState('')
 
 	const onFormSubmit = (evt: FormEvent<HTMLFormElement>) => {
 		evt.preventDefault()
 
-		const newTarea = {
-			id: new Date().getTime(),
-			description: 'tarea de placeholder',
-			done: false
-		}
-
-		const action = {
-			type: types.CREATE_TODO,
-			payload: newTarea
-		}
-		
-		dispatch(action)
+		createTodo(input)
 	}
 
 	return (
@@ -32,7 +20,7 @@ export const Comp3 = ({dispatch}: comp3Props) => {
 			<form onSubmit={ (evt) => onFormSubmit(evt)}>
 
 				<label htmlFor="inputTextRedux"> Tarea </label>
-				<input id="inputTextRedux" type='text' placeholder="Escribe la tarea..." />
+				<input id="inputTextRedux" value={input} onChange={(evt) => setInput(evt.target.value)} type='text' placeholder="Escribe la tarea..." />
 				<button type="submit">Agregar</button>
 
 			</form>

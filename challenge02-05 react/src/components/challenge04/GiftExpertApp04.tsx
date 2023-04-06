@@ -35,6 +35,6 @@ export const GiftExpertApp04 = () => {
       {getCategoryList.map((category, key) => {
         return <GifGrid04 key={key} category={category}/>
       })}
-    </div> 
+    </div>
   )
 }

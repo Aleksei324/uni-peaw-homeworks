@@ -5,23 +5,23 @@ import { GifGrid05 } from './components/challenge05/GifGrid05'
 
 function App() {
   return (
-    <div>
+    <>
       <FirstApp02/>
       <hr/>
 
-      <h2>Challenge 03</h2>
+      <h2>Challenge 03: <small>useState</small></h2>
       <Challenge03buttons/>
       <hr/>
 
-      <h2>Challenge 04</h2>
+      <h2>Challenge 04: <small>print arrays into HTML</small></h2>
       <GiftExpertApp04/>
       <hr/>
 
-      <h2>Challenge 05</h2>
+      <h2>Challenge 05: <small>fetch API</small></h2>
       <GifGrid05 category='Greyhound dog'/>
       <GifGrid05 category='Space'/>
       <GifGrid05 category='Cat'/>
-    </div>
+    </>
   )
 }
 

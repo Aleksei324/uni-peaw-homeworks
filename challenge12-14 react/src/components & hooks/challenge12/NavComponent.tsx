@@ -8,12 +8,12 @@ export const NavComponent = () => {
       <div>
         <NavLink 
           className={(x) => x.isActive ? 'activeNav' : ''} 
-          to='/challenge13public'>Challenge 13 (public)
+          to='/challenge13public'>Challenge 13 (público)
         </NavLink>
 
         <NavLink 
           className={(x) => x.isActive ? 'activeNav' : ''} 
-          to='/challenge13private'>Challenge 13 (private)
+          to='/challenge13private'>Challenge 13 (privado)
         </NavLink>
 
         <NavLink 

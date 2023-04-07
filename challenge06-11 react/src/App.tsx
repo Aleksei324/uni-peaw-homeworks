@@ -16,7 +16,7 @@ function App() {
       <Challenge09rerenders/>
       <hr/>
       
-      <h2>Challenge 10 & 11: <small>useReducer/Redux</small></h2>
+      <h2>Challenge 10 & 11: <small>useReducer</small></h2>
       <Challenge10TodoApp/>
     </>
   )

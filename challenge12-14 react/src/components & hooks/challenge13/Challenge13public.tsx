@@ -1,5 +1,5 @@
 import { useContext, useState } from "react"
-import { UserContext, types } from "."
+import { UserContext, types13 } from "."
 import { useNavigate } from "react-router-dom"
 
 export const Challenge13public = () => {
@@ -15,13 +15,13 @@ export const Challenge13public = () => {
     if (iuser === '') {
 
       action = {
-        type: types.LOGIN,
+        type: types13.LOGIN,
         payload: 'nombre genérico'
       }
     }
     else {
       action = {
-        type: types.LOGIN,
+        type: types13.LOGIN,
         payload: iuser
       }
     }
@@ -32,7 +32,7 @@ export const Challenge13public = () => {
   const onLogout = () => {
 
     const action = {
-      type: types.LOGOUT,
+      type: types13.LOGOUT,
       payload: ''
     }
 

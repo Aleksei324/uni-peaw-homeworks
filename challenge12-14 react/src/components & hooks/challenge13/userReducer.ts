@@ -1,4 +1,4 @@
-import { types } from "./";
+import { types13 } from "./";
 
 export interface userState {
   logged: boolean,
@@ -15,12 +15,12 @@ export const userReducer = (currentState: userState, action: userAction) => {
 
   switch (action.type) {
 
-    case types.LOGIN:
+    case types13.LOGIN:
       temp.logged = true
       temp.name = action.payload
       return temp
 
-    case types.LOGOUT:
+    case types13.LOGOUT:
       temp.logged = false
       temp.name = ''
       return temp

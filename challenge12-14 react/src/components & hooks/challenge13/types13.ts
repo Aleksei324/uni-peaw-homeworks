@@ -1,4 +1,4 @@
-export const types = {
+export const types13 = {
   LOGIN: 'LOGIN',
   LOGOUT: 'LOGOUT'
 }
